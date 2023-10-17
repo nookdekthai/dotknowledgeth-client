@@ -102,7 +102,7 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
                         height={100}
                         alt=""
                       />
-                      Dot knowledgth
+                      Dot knowledgeth
                     </Link>
                   </div>
                   <div className="flex items-center">
