@@ -101,15 +101,15 @@ const Footer = (props: Props) => {
           <div>
             <h3 className="text-[20px] font-[600] text-black dark:text-white pb-3">Contact Info</h3>
             <p className="text-base text-black dark:text-gray-300 dark:hover:text-white pb-2">
-            Tel. : 083-629-4994
+            Tel. : 084-660-1580
             </p>
            
             <p className="text-base text-black dark:text-gray-300 dark:hover:text-white pb-2">
-            Email : netandmanu123@gmail.com
+            Email : dotknowledgework@gmail.comm
             </p>
          
             <p className="text-base text-black dark:text-gray-300 dark:hover:text-white  pb-2">
-            Line Id : netflowers123
+            Line Id : 
             </p>
             <div className='bg-white max-w-[160px] p-2'>
               <Image
@@ -123,7 +123,7 @@ const Footer = (props: Props) => {
         </div>
         <br />
         <p className="text-center text-black dark:text-white">
-          Copyright © 2023 ELearning | All Rights Reserved
+          Copyright © 2023 dotknowledge | All Rights Reserved
         </p>
       </div>
       <br />
