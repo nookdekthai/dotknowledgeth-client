@@ -18,7 +18,6 @@ const Page = async () => {
     banner: banner?.layout?.banner || {},
     category: category?.layout?.categories || []
   }
-  console.log("🚀 ~ file: page.tsx:17 ~ Page ~ webInfo:", webInfo)
 
   return (
     <Home webInfo={webInfo} />
