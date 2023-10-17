@@ -6,17 +6,17 @@ const item = [
     {
         title: ' 01. Learn',
         icon: '/online-learning.png',
-        message: 'Lorem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.',
+        message: 'การเรียนการสอนมีทั้งเเบบ Online เเละ Offline รวมทั้งยังมีคลาสสอน Zoom เเละคลาสวีดีโอ',
     },
     {
-        title: '02. Graduate',
+        title: '02. Expert',
         icon: '/online-course.png',
-        message: 'orem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.',
+        message: 'เรามีผู้เชี่ยวชาญที่มีความชำนาญเเยกรายวิชา',
     },
     {
         title: '03. Work',
         icon: '/computer.png',
-        message: 'orem ipsum dolor sit amet, consectetur dolorili adipiscing elit. Felis donec massa aliqua.',
+        message: 'ปูพื้นฐานพร้อมฝึกตะลุยโจทย์ไปพร้อมกัน',
     },
 ]
 
@@ -26,7 +26,7 @@ const WhyLearnCourse = () => {
             <div className="w-full bg-[#1A064F] p-10 pb-20 ">
                 <div className="w-full" data-aos="fade-down" data-aos-delay="500">
                     <p className="text-white text-center font-bold text-[30px] mt-10">Why learn with our courses?</p>
-                    <p className="text-white text-center text-sm mb-16">Lorem ipsum dolor sit amet, consectetur.</p>
+                    <p className="text-white text-center text-sm mb-16">เรียนกับเราดียังไง</p>
                 </div>
                 <div className='flex flex-col md:flex-row gap-8 justify-center items-center text-black' data-aos="fade-down" data-aos-delay="1000" >
                     {
