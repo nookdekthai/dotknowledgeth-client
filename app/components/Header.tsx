@@ -97,12 +97,12 @@ const Header: FC<Props> = ({ activeItem, setOpen, route, open, setRoute }) => {
                       className={`text-[18px] md:text-[25px] flex items-center font-Poppins font-[500] text-black dark:text-white`}
                     >
                       <Image
-                        src={'/bird.png'}
+                        src={'/logoo.png'}
                         width={100}
                         height={100}
                         alt=""
                       />
-                      Forex Course
+                      English Course
                     </Link>
                   </div>
                   <div className="flex items-center">
