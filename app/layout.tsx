@@ -13,6 +13,32 @@ import socketIO from "socket.io-client";
 const ENDPOINT = process.env.NEXT_PUBLIC_SOCKET_SERVER_URI || "";
 const socketId = socketIO(ENDPOINT, { transports: ["websocket"] });
 
+export const metadata = {
+  title: 'Studying English: Online Course สอนภาษาอังกฤษ สำหรับทุกคน',
+  description: 'สอนภาษาอังกฤษวัยเด็ก วัยทำงาน ปูพื้นฐาน ติวสอบทุกสนาม TOEIC ราชการ กพ เข้ามหาวิทยาลัย มีทั้งคลาสสด และออนไลน์. ผู้สอนมีประสบการณ์. ปูพื้นฐานนักเรียนไม่มีพื้นฐานให้เก่งได้ ',
+  openGraph: {
+    title: 'Studying English: Online Course สอนภาษาอังกฤษ สำหรับทุกคน',
+    description: 'สอนเทรดข่าวฟอเร็ก คอร์สเทรด Forex',
+    url: 'https://dotknowledgeth.vercel.app',
+    siteName: 'dotknowledgeth',
+    images: [
+      {
+        url: 'https://dotknowledgeth.com/wp-content/uploads/2020/06/97496214_261523775036041_1655514634804789248_n.jpg',
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'th-TH',
+    type: 'website',
+  },
+  twitter: {
+    card: 'Studying English: Online Course สอนภาษาอังกฤษ สำหรับทุกคน',
+    title: 'สอนภาษาอังกฤษวัยเด็ก วัยทำงาน ปูพื้นฐาน ติวสอบทุกสนาม TOEIC ราชการ กพ เข้ามหาวิทยาลัย มีทั้งคลาสสด และออนไลน์. ผู้สอนมีประสบการณ์. ปูพื้นฐานนักเรียนไม่มีพื้นฐานให้เก่งได้',
+    description: 'สอนภาษาอังกฤษวัยเด็ก วัยทำงาน ปูพื้นฐาน ติวสอบทุกสนาม TOEIC ราชการ กพ เข้ามหาวิทยาลัย มีทั้งคลาสสด และออนไลน์. ผู้สอนมีประสบการณ์. ปูพื้นฐานนักเรียนไม่มีพื้นฐานให้เก่งได้ ',
+    images: ['https://dotknowledgeth.com/wp-content/uploads/2020/06/97496214_261523775036041_1655514634804789248_n.jpg'],
+  },
+}
+
 const poppins = Anuphan({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
