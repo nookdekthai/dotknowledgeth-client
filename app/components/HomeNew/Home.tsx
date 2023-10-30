@@ -36,11 +36,7 @@ function Home({ webInfo }: any) {
 
     return (
         <div>
-            <Heading
-                title="Dot-Knowledgeth"
-                description="Elearning is a learning management system for helping programmers."
-                keywords="programming,mern"
-            />
+         
             <Header
                 open={open}
                 setOpen={setOpen}
