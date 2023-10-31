@@ -1,6 +1,10 @@
 
 import Home from "./components/HomeNew/Home";
 export const metadata = {
+
+  title: 'Dot-Knowledgeth สถาบันสอนภาษาอังกฤษ',
+  description: 'สอนภาษาอังกฤษวัยเด็ก วัยทำงาน ปูพื้นฐาน ติวสอบทุกสนาม TOEIC ราชการ กพ เข้ามหาวิทยาลัย มีทั้งคลาสสด และออนไลน์. ผู้สอนมีประสบการณ์. ปูพื้นฐานนักเรียนไม่มีพื้นฐานให้เก่งได้',
+  keywords : 'English , คอร์สสอนภาษาอังกฤษ , คอร์สเรียนภาษาอังกฤษ ',
   
   openGraph: {
     title: 'Studying English: Online Course สอนภาษาอังกฤษ สำหรับทุกคน',
