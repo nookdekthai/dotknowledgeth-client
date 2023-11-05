@@ -9,11 +9,11 @@ export const metadata = {
   openGraph: {
     title: 'Studying English: Online Course สอนภาษาอังกฤษ สำหรับทุกคน',
     description: 'สอนภาษาอังกฤษวัยเด็ก วัยทำงาน ปูพื้นฐาน ติวสอบทุกสนาม TOEIC ราชการ กพ เข้ามหาวิทยาลัย มีทั้งคลาสสด และออนไลน์. ผู้สอนมีประสบการณ์. ปูพื้นฐานนักเรียนไม่มีพื้นฐานให้เก่งได้',
-    url: 'https://dotknowledgeth.vercel.app',
+    url: 'https://www.dotknowledgeth.com',
     siteName: 'dotknowledgeth',
     images: [
       {
-        url: 'https://dotknowledgeth.com/wp-content/uploads/2020/06/97496214_261523775036041_1655514634804789248_n.jpg',
+        url: 'https://res.cloudinary.com/doqbge8fv/image/upload/v1699175466/t40jdignsubict1mxd9g.jpg',
         width: 800,
         height: 600,
       },
@@ -25,7 +25,7 @@ export const metadata = {
     card: 'Studying English: Online Course สอนภาษาอังกฤษ สำหรับทุกคน',
     title: 'สอนภาษาอังกฤษวัยเด็ก วัยทำงาน ปูพื้นฐาน ติวสอบทุกสนาม TOEIC ราชการ กพ เข้ามหาวิทยาลัย มีทั้งคลาสสด และออนไลน์. ผู้สอนมีประสบการณ์. ปูพื้นฐานนักเรียนไม่มีพื้นฐานให้เก่งได้',
     description: 'สอนภาษาอังกฤษวัยเด็ก วัยทำงาน ปูพื้นฐาน ติวสอบทุกสนาม TOEIC ราชการ กพ เข้ามหาวิทยาลัย มีทั้งคลาสสด และออนไลน์. ผู้สอนมีประสบการณ์. ปูพื้นฐานนักเรียนไม่มีพื้นฐานให้เก่งได้ ',
-    images: ['https://dotknowledgeth.com/wp-content/uploads/2020/06/97496214_261523775036041_1655514634804789248_n.jpg'],
+    images: ['https://res.cloudinary.com/doqbge8fv/image/upload/v1699175466/t40jdignsubict1mxd9g.jpg'],
   },
 }
 
