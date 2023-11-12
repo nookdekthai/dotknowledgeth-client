@@ -79,7 +79,7 @@ const CoursePlayer: FC<Props> = ({ videoUrl }) => {
   );
 };
 
-const RenderYoutubeVideo = ({ linkYT }) => {
+const RenderYoutubeVideo = ({ linkYT }: any) => {
   return (
     <div className="videoWrapper">
       <iframe
@@ -94,7 +94,7 @@ const RenderYoutubeVideo = ({ linkYT }) => {
   );
 };
 
-const RenderStreamableVideo = ({ linkYT }) => {
+const RenderStreamableVideo = ({ linkYT }: any) => {
   return (
     <div className="videoWrapper">
       <div
