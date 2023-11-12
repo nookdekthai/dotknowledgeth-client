@@ -57,8 +57,8 @@ const PicShow = () => {
                 <p className="text-black text-center font-bold text-[30px] dark:text-white md:text-[36px] font-Poppins mt-20 mb-10">ติมตามเราได้ที่</p>
 
                 <div className="flex gap-4 justify-center">
-                    <div className="w-[363px] md:w-[500px] h-[10rem] md:h-[23rem] bg-red-100 relative">
-                        <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: 'url("/follow/IMG_0961.png")' }} />
+                    <div className="w-[363px] md:w-[500px] h-[10rem] md:h-[23rem] bg-red-100 relative rounded-full">
+                        <div className="rounded-xl absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: 'url("/follow/IMG_0961.png")' }} />
                         <div className="opacity-0 hover:opacity-100 duration-300 bg-[#0000009c] absolute inset-0 z-10 flex justify-center items-center text-6xl text-white font-semibold">
                             <a href={'https://www.tiktok.com/@dotknowledge.ayutthaya'}
                                 target="_blank"
@@ -71,8 +71,8 @@ const PicShow = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="w-[363px] md:w-[500px] h-[10rem] md:h-[23rem] bg-red-100 relative">
-                        <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: 'url("/follow/IMG_6908.png")' }} />
+                    <div className="w-[363px] md:w-[500px] h-[10rem] md:h-[23rem] bg-red-100 relative rounded-full">
+                        <div className="rounded-xl absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: 'url("/follow/IMG_6908.png")' }} />
                         <div className="opacity-0 hover:opacity-100 bg-[#0000009c] duration-300 absolute inset-0 z-10 flex justify-center items-center text-6xl text-white font-semibold">
                             <a
                                 href={'https://web.facebook.com/dotknowledge'}
