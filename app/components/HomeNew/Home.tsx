@@ -6,8 +6,11 @@ import Footer from "../../components/Footer";
 import AOS from 'aos';
 
 
+
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "react-slideshow-image/dist/styles.css";
 import 'aos/dist/aos.css';
 
 import Hero from "./Hero";
@@ -16,10 +19,10 @@ import PeopleReview from "./PeopleReview";
 import WhyLearnCourse from "./WhyLearnCourse";
 import Courses from "./Course";
 import FAQ from "../FAQ/FAQ";
+import PicShow from "./PicShow";
 
 
 function Home({ webInfo }: any) {
-    console.log("🚀 ~ file: Home.tsx:24 ~ Home ~ layout:", webInfo)
     const [open, setOpen] = useState(false);
     const [activeItem, setActiveItem] = useState(0);
     const [route, setRoute] = useState("Login");
@@ -32,11 +35,8 @@ function Home({ webInfo }: any) {
             delay: 300
         });
     }, [])
-
-
     return (
         <div>
-        
             <Header
                 open={open}
                 setOpen={setOpen}
@@ -53,8 +53,9 @@ function Home({ webInfo }: any) {
             />
             <PeopleReview />
             <Courses />
+            <PicShow/>
             <WhyLearnCourse />
-            <FAQ/>
+            <FAQ />
             <Footer />
         </div>
     );
