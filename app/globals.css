@@ -23,6 +23,11 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.react-slideshow-fadezoom-images-wrap > div {
+  display: flex !important;
+  justify-content: center;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
