@@ -10,10 +10,10 @@ export const navItemsData = [
     name: "Courses",
     url: "/courses",
   },
-  {
-    name: "Blog",
-    url: "/blog",
-  },
+  // {
+  //   name: "Blog",
+  //   url: "/blog",
+  // },
   {
     name: "About",
     url: "/about",
