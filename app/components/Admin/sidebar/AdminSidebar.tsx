@@ -219,6 +219,20 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+            <Item
+              title="Create Blog"
+              to="/admin/create-blog"
+              icon={<OndemandVideoIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Live Blog"
+              to="/admin/blogs"
+              icon={<OndemandVideoIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
 
             <Typography
               variant="h5"
