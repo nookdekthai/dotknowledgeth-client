@@ -58,17 +58,24 @@ const TopCategory = ({ categoty = [] }) => {
 function CategoriesItem({ title = '' }) {
     return (
         <>
-            <div className="w-[180px] h-[231px] max-w-[200px] rounded-md bg-[#EEF2F6] py-[25px] px-[38px] text-center items-center justify-center">
-                <div className="bg-white rounded-full h-[100px] w-[100px] flex items-center justify-center text-center p-3">
+            <div className="w-[180px] h-[231px] max-w-[200px] rounded-md bg-[#EEF2F6] py-[10px] px-[10px] text-center items-center justify-center">
+            <Image
+                        src={`/วิชา/${title}.png`}
+                        width={300}
+                        height={500}
+                        alt=""
+                        className="object-contain "
+                    />
+                {/* <div className="bg-white rounded-full flex items-center justify-center text-center p-3">
                     <Image
-                        src={'/brand5.png'}
+                        src={`/วิชา/${title}.png`}
                         width={100}
                         height={30}
                         alt=""
                         className="object-contain "
                     />
                     
-                </div>
+                </div> */}
                 <div className="text-black text-[16px] font-Poppins font-bold mt-[13px]">{title}</div>
                 {/* <div className=" text-xs mt-2 text-[#4f547b] font-normal">1 Course</div> */}
             </div>
