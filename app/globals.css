@@ -53,7 +53,7 @@ input[type="number"] {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb)); */
 }
 
 .hero_animation {
@@ -69,6 +69,14 @@ body {
   text-fill-color: transparent;
 }
 
+.jodit-react-container, .jodit-container {
+  color: #000;
+  max-height: 400px !important;
+}
+
+.jodit-container{
+  width: 100% !important;
+}
 
 @keyframes changeBackgroundColor {
 

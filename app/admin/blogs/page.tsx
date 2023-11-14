@@ -6,6 +6,7 @@ import React from 'react'
 import AdminSidebar from "../../components/Admin/sidebar/AdminSidebar";
 import AllCourses from "../../components/Admin/Course/AllCourses";
 import BlogInformation from '@/app/components/Admin/Blog/BlogInformation'
+import AllBlog from '@/app/components/Admin/Blog/AllBlog'
 // import AllEbook from '@/app/components/Admin/ebook/AllEbook'
 
 type Props = {}
@@ -25,8 +26,8 @@ const page = (props: Props) => {
           </div>
           <div className="w-[85%]">
             <DashboardHero />
-            <BlogInformation />
-            {/* <AllEbook /> */}
+            {/* <BlogInformation /> */}
+            <AllBlog />
           </div>
         </div>
       </AdminProtected>

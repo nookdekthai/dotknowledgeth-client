@@ -3,8 +3,8 @@ import DashboardHero from '@/app/components/Admin/DashboardHero'
 import AdminProtected from '@/app/hooks/adminProtected'
 import Heading from '@/app/utils/Heading'
 import React from 'react'
-import AdminSidebar from "../../components/Admin/sidebar/AdminSidebar";
-import AllCourses from "../../components/Admin/Course/AllCourses";
+import AdminSidebar from "../../../components/Admin/sidebar/AdminSidebar";
+import AllCourses from "../../../components/Admin/Course/AllCourses";
 import BlogInformation from '@/app/components/Admin/Blog/BlogInformation'
 // import AllEbook from '@/app/components/Admin/ebook/AllEbook'
 
