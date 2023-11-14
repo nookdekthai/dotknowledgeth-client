@@ -6,11 +6,15 @@ import React from 'react'
 import AdminSidebar from "../../../components/Admin/sidebar/AdminSidebar";
 import AllCourses from "../../../components/Admin/Course/AllCourses";
 import BlogInformation from '@/app/components/Admin/Blog/BlogInformation'
+import { useGetBlogContentQuery } from '@/redux/features/blog/blogsApi'
+import BlogEdit from '@/app/components/Admin/Blog/BlogEdit'
 // import AllEbook from '@/app/components/Admin/ebook/AllEbook'
 
 type Props = {}
 
-const page = (props: Props) => {
+const page = ({ params }: any) => {
+  const id = params?.id;
+
   return (
     <div>
       <AdminProtected>
@@ -25,7 +29,8 @@ const page = (props: Props) => {
           </div>
           <div className="w-[85%]">
             <DashboardHero />
-            <BlogInformation />
+            <BlogEdit id={id}/>
+           
             {/* <AllEbook /> */}
           </div>
         </div>

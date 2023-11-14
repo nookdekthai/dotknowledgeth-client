@@ -24,14 +24,14 @@ export const blogsApi = apiSlice.injectEndpoints({
         credentials: "include" as const,
       }),
     }),
-    // editCourse: builder.mutation({
-    //   query: ({ id, data }) => ({
-    //     url: `edit-course/${id}`,
-    //     method: "PUT",
-    //     body: data,
-    //     credentials: "include" as const,
-    //   }),
-    // }),
+    editBlog: builder.mutation({
+      query: ({ id, data }) => ({
+        url: `/edit-blog/${id}`,
+        method: "PUT",
+        body: data,
+        credentials: "include" as const,
+      }),
+    }),
     getAllBlog: builder.query({
       query: () => ({
         url: "get-all-blog",
@@ -42,6 +42,13 @@ export const blogsApi = apiSlice.injectEndpoints({
     getBlogContent: builder.query({
       query: (id: any) => ({
         url: `get-blog/${id}`,
+        method: "GET",
+        credentials: "include" as const,
+      }),
+    }),
+    getBlogContentById: builder.query({
+      query: (id: any) => ({
+        url: `get-blog-byid/${id}`,
         method: "GET",
         credentials: "include" as const,
       }),
@@ -106,9 +113,10 @@ export const {
   useCreateBlogMutation,
   useGetAllBlogQuery,
   useDeleteBlogMutation,
-  // useEditCourseMutation,
+  useEditBlogMutation,
   // useGetUsersAllCoursesQuery,
   useGetBlogContentQuery,
+  useGetBlogContentByIdQuery,
   // useGetCourseContentQuery,
   // useAddNewQuestionMutation,
   // useAddAnswerInQuestionMutation,

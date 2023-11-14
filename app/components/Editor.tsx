@@ -5,13 +5,18 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 
 const JoditEditor = dynamic(() => import('jodit-react'), { ssr: false })
 
-const Editor = ({ setPropsContent }) => {
+const Editor = ({ setPropsContent, defaultContent }) => {
     const editor = useRef(null);
     const [content, setContent] = useState('');
     // console.log("🚀 ~ file: Editor4.tsx:11 ~ Editor4 ~ content:", content)
 
+    useEffect(()=>{
+        setContent(defaultContent)
+    },[defaultContent])
+
     useEffect(() => {
         setPropsContent(content)
+
     }, [content])
 
 

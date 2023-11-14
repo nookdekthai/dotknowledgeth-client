@@ -41,12 +41,12 @@ const AllBlog = (props: Props) => {
     const { theme, setTheme } = useTheme();
     const [open, setOpen] = useState(false);
     const [openModalAdd, setOpenModalAdd] = useState(false);
-    const [ebookId, setEbookId] = useState("");
+    const [blogId, setBlogId] = useState("");
     const { isLoading, data, refetch } = useGetAllBlogQuery(
         {},
         { refetchOnMountOrArgChange: true }
     );
-    const [deleteEbook, { isSuccess, error, isLoading: isLoadingDel }] = useDeleteBlogMutation({});
+    const [deleteBlog, { isSuccess, error, isLoading: isLoadingDel }] = useDeleteBlogMutation({});
 
     const [courseInfo, setCourseInfo] = useState({}) as any;
 
@@ -79,7 +79,7 @@ const AllBlog = (props: Props) => {
                         <Button
                             onClick={() => {
                                 setOpen(!open);
-                                setEbookId(params.row.id);
+                                setBlogId(params.row.id);
                             }}
                         >
                             <AiOutlineDelete
@@ -111,7 +111,7 @@ const AllBlog = (props: Props) => {
         if (isSuccess) {
             setOpen(false);
             refetch();
-            toast.success("Course Deleted Successfully");
+            toast.success("Blog Deleted Successfully");
         }
         if (error) {
             if ("data" in error) {
@@ -122,8 +122,8 @@ const AllBlog = (props: Props) => {
     }, [isSuccess, error, refetch]);
 
     const handleDelete = async () => {
-        const id = ebookId;
-        await deleteEbook(id);
+        const id = blogId;
+        await deleteBlog(id);
     };
 
     const handleCloseModalAdd = () => {
@@ -203,8 +203,9 @@ const AllBlog = (props: Props) => {
                         >
                             <Box className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[450px] bg-white dark:bg-slate-900 rounded-[8px] shadow p-4 outline-none">
                                 <h1 className={`${styles.title}`}>
-                                    Are you sure you want to delete this course?
+                                    Are you sure you want to delete
                                 </h1>
+                                <div></div>
                                 <div className="flex w-full items-center justify-between mb-6 mt-4">
                                     <div
                                         className={`${styles.button} !w-[120px] h-[30px] bg-[#47d097]`}
@@ -248,7 +249,7 @@ const AllBlog = (props: Props) => {
                                             id="name"
                                             placeholder="MERN stack LMS platform with next 13"
                                             className={`
-            ${styles.input}`}
+                                                        ${styles.input}`}
                                         />
                                     </div>
                                     <br />
