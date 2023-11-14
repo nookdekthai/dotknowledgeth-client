@@ -162,13 +162,13 @@ const EbookDetails = ({
                       <AiFillEye style={{ fontSize: 20 }} />&nbsp;
                       View
                     </button>
-                    {/* <button
+                    <button
                       onClick={saveFile}
                       className={`${styles.button} !w-[190px] my-3 font-Poppins cursor-pointer bg-[#47d097] hover:bg-[#37a074]`}
                     >
                       <HiOutlineDownload style={{ fontSize: 20 }} />&nbsp;
                       Download Now
-                    </button> */}
+                    </button> 
                   </div>
 
                 ) : (
