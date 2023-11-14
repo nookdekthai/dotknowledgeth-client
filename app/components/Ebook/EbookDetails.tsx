@@ -157,14 +157,14 @@ const EbookDetails = ({
                   <div className="flex gap-2 800px:w-[35%]">
                     <button
                       onClick={handleClickView}
-                      className={`${styles.button} w-full my-3 font-Poppins cursor-pointer bg-[#47d097] hover:bg-[#37a074]`}
+                      className={`${styles.button} w-full h-[50px] my-3 font-Poppins cursor-pointer bg-[#47d097] hover:bg-[#37a074]`}
                     >
                       <AiFillEye style={{ fontSize: 20 }} />&nbsp;
                       View
                     </button>
                     <button
                       onClick={saveFile}
-                      className={`${styles.button} !w-[190px] my-3 font-Poppins cursor-pointer bg-[#47d097] hover:bg-[#37a074]`}
+                      className={`${styles.button} !w-[190px] h-[50px] my-3 font-Poppins cursor-pointer bg-[#47d097] hover:bg-[#37a074]`}
                     >
                       <HiOutlineDownload style={{ fontSize: 20 }} />&nbsp;
                       Download Now
