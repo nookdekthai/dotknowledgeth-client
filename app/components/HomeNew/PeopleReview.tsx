@@ -88,7 +88,7 @@ const PeopleReview = () => {
             <div className="w-full bg-[#6440FB] p-10 pb-20">
                 <div className="w-full">
                     <p className="text-[#00FF84] text-center font-bold text-[30px] mt-10" data-aos="fade-down" >What People Say</p>
-                    <p className="text-white text-center text-sm mb-16" data-aos="fade-down" >Lorem ipsum dolor sit amet, consectetur.</p>
+                    <p className="text-white text-center text-sm mb-16" data-aos="fade-down" ></p>
                 </div>
                 <div className="w-full flex gap-3 justify-center" data-aos="fade-down" >
                     <div className="max-w-[90%] m-auto">

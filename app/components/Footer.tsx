@@ -22,14 +22,7 @@ const Footer = (props: Props) => {
                   Our Story
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/privacy-policy"
-                  className="text-base text-black dark:text-gray-300 dark:hover:text-white"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
+             
               <li>
                 <Link
                   href="/faq"
@@ -51,22 +44,8 @@ const Footer = (props: Props) => {
                   Courses
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/profile"
-                  className="text-base text-black dark:text-gray-300 dark:hover:text-white"
-                >
-                  My Account
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/course-dashboard"
-                  className="text-base text-black dark:text-gray-300 dark:hover:text-white"
-                >
-                  Course Dashboard
-                </Link>
-              </li>
+            
+           
             </ul>
           </div>
           <div className="space-y-3">
@@ -74,7 +53,7 @@ const Footer = (props: Props) => {
             <ul className="space-y-4">
               <li>
                 <Link
-                  href="https://www.youtube.com/channel/UCHz6Sne9splmvm-q2w1_HWQ"
+                  href="https://www.youtube.com/@dotknowledgework3344"
                   className="text-base text-black dark:text-gray-300 dark:hover:text-white"
                 >
                   Youtube
@@ -82,20 +61,13 @@ const Footer = (props: Props) => {
               </li>
               <li>
                 <Link
-                  href="https://www.instagram.com/shahriar_sajeeb_/"
+                  href="https://instagram.com/dotknowledge"
                   className="text-base text-black dark:text-gray-300 dark:hover:text-white"
                 >
                   Instagram
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="https://www.github.com/shahriarsajeeb"
-                  className="text-base text-black dark:text-gray-300 dark:hover:text-white"
-                >
-                  github
-                </Link>
-              </li>
+           
             </ul>
           </div>
           <div>
@@ -105,7 +77,7 @@ const Footer = (props: Props) => {
             </p>
            
             <p className="text-base text-black dark:text-gray-300 dark:hover:text-white pb-2">
-            Email : dotknowledgework@gmail.comm
+            Email : dotknowledgework@gmail.com
             </p>
          
             <p className="text-base text-black dark:text-gray-300 dark:hover:text-white  pb-2">
