@@ -23,6 +23,8 @@ import {
 } from "./Icon";
 import avatarDefault from "../../../../public/assests/avatar.png";
 import { useSelector } from "react-redux";
+import ArtTrackIcon from '@mui/icons-material/ArtTrack';
+import ArticleIcon from '@mui/icons-material/Article';
 import Link from "next/link";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -222,14 +224,14 @@ const Sidebar = () => {
             <Item
               title="Create Blog"
               to="/admin/create-blog"
-              icon={<OndemandVideoIcon />}
+              icon={<ArtTrackIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Live Blog"
               to="/admin/blogs"
-              icon={<OndemandVideoIcon />}
+              icon={<ArticleIcon />}
               selected={selected}
               setSelected={setSelected}
             />
