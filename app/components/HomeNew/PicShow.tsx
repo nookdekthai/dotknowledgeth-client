@@ -54,7 +54,7 @@ const PicShow = () => {
                 </div>
             </div>
             <div className="w-full mb-10">
-                <p className="text-black text-center font-bold text-[30px] dark:text-white md:text-[36px] font-Poppins mt-20 mb-10">ติมตามเราได้ที่</p>
+                <p className="text-black text-center font-bold text-[30px] dark:text-white md:text-[36px] font-Poppins mt-20 mb-10">ติดตามเราได้ที่</p>
 
                 <div className="flex gap-4 justify-center">
                     <div className="w-[363px] md:w-[500px] h-[10rem] md:h-[23rem] bg-red-100 relative rounded-full">
