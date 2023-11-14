@@ -47,7 +47,7 @@ const Page = (props: Props) => {
                 {
                     courses && courses.length === 0 && (
                         <p className={`${styles.label} justify-center min-h-[50vh] flex items-center`}>
-                            No Ebook found!
+                            No Blog found!
                         </p>
                     )
                 }
