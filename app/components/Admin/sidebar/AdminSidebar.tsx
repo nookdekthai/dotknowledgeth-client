@@ -20,6 +20,8 @@ import {
   ManageHistoryIcon,
   SettingsIcon,
   ExitToAppIcon,
+  DifferenceIcon,
+  InsertDriveFileIcon,
 } from "./Icon";
 import avatarDefault from "../../../../public/assests/avatar.png";
 import { useSelector } from "react-redux";
@@ -72,9 +74,8 @@ const Sidebar = () => {
     <Box
       sx={{
         "& .pro-sidebar-inner": {
-          background: `${
-            theme === "dark" ? "#111C43 !important" : "#fff !important"
-          }`,
+          background: `${theme === "dark" ? "#111C43 !important" : "#fff !important"
+            }`,
         },
         "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
@@ -102,7 +103,7 @@ const Sidebar = () => {
           top: 0,
           left: 0,
           height: "100vh",
-          zIndex:99999999999999,
+          zIndex: 99999999999999,
           width: isCollapsed ? "0%" : "16%",
         }}
       >
@@ -122,11 +123,11 @@ const Sidebar = () => {
                 alignItems="center"
                 ml="15px"
               >
-               <Link href="/" className="block">
-               <h3 className="text-[25px] font-Poppins uppercase dark:text-white text-black">
-                  ELearning
-                </h3>
-               </Link>
+                <Link href="/" className="block">
+                  <h3 className="text-[25px] font-Poppins uppercase dark:text-white text-black">
+                    ELearning
+                  </h3>
+                </Link>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)} className="inline-block">
                   <ArrowBackIosIcon className="text-black dark:text-[#ffffffc1]" />
                 </IconButton>
@@ -221,6 +222,22 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
+            <Item
+              title="Create Ebook"
+              to="/admin/create-ebook"
+              icon={<DifferenceIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+            <Item
+              title="Live Ebook"
+              to="/admin/ebook"
+              icon={<InsertDriveFileIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
             <Item
               title="Create Blog"
               to="/admin/create-blog"
