@@ -20,6 +20,7 @@ import WhyLearnCourse from "./WhyLearnCourse";
 import Courses from "./Course";
 import FAQ from "../FAQ/FAQ";
 import PicShow from "./PicShow";
+import Ebooks from "./Ebooks";
 
 
 function Home({ webInfo }: any) {
@@ -53,6 +54,7 @@ function Home({ webInfo }: any) {
             />
             <PeopleReview />
             <Courses />
+            <Ebooks/>
             <PicShow/>
             <WhyLearnCourse />
             <FAQ />
