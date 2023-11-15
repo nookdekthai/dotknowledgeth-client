@@ -77,7 +77,9 @@ const CoursePreview: FC<Props> = ({
           >
             Apply
           </div>
+        </div>
        
+      </div>
       <div className="w-full">
         <div className="w-full 800px:pr-5">
           <h1 className="text-[25px] font-Poppins font-[600]">
