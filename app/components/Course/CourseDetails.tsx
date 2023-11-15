@@ -246,18 +246,7 @@ const CourseDetails = ({
                 )}
               </div>
               <br />
-              <p className="pb-1 text-black dark:text-white">
-                • Source code included
-              </p>
-              <p className="pb-1 text-black dark:text-white">
-                • Full lifetime access
-              </p>
-              <p className="pb-1 text-black dark:text-white">
-                • Certificate of completion
-              </p>
-              <p className="pb-3 800px:pb-1 text-black dark:text-white">
-                • Premium Support
-              </p>
+            
             </div>
           </div>
         </div>
