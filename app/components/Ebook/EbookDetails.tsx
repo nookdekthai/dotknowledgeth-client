@@ -19,6 +19,9 @@ import { Box, Modal } from "@mui/material";
 import SimpleBackdrop from "../Loading/SimpleBackdrop";
 import { AiFillEye } from "react-icons/ai";
 import { useRouter } from "next/navigation";
+import { useCreateOrderEbookMutation } from "@/redux/features/orders/ordersApi";
+import toast from "react-hot-toast";
+import LoadingBackDrop from "../Loader/LoadingBackDrop";
 
 
 type Props = {
@@ -43,6 +46,7 @@ const EbookDetails = ({
   const [open, setOpen] = useState(false);
   const [isLoadingBackDrop, setLoadingBackDrop] = useState(false);
   const [openModalDownLoad, setOpenModalDownLoad] = useState(false);
+  const [createOrderEbook, { data: orderDataEbook, error: errorEbook, isLoading }] = useCreateOrderEbookMutation();
 
   useEffect(() => {
     setUser(userData?.user);
@@ -58,7 +62,15 @@ const EbookDetails = ({
 
   const handleOrder = (e: any) => {
     if (user) {
-      setOpen(true);
+      if (ebookInfo.price == 0) {
+
+        createOrderEbook({
+          isFree: true,
+          ebookId: ebookInfo._id
+        })
+      } else {
+        setOpen(true);
+      }
     } else {
       setRoute("Login");
       openAuthModal(true);
@@ -72,12 +84,29 @@ const EbookDetails = ({
     )
   };
 
-  const handleClickView = () =>{
+  const handleClickView = () => {
     router.push(`/view-pdf/${ebookInfo._id}`)
   }
 
+  useEffect(() => {
+    if (orderDataEbook) {
+      refetch();
+      handleClickView()
+    }
+    if (errorEbook) {
+      if ("data" in errorEbook) {
+        const errorMessage = errorEbook as any;
+        toast.error(errorMessage.data.message);
+      }
+    }
+  }, [orderDataEbook, errorEbook])
+
+
   return (
     <div>
+      {
+        isLoading && <LoadingBackDrop />
+      }
       <div className="w-[90%] 800px:w-[90%] m-auto py-5">
         <div className="w-full flex flex-col-reverse 800px:flex-row">
           <div className="w-full 800px:w-[65%] 800px:pr-5 relative">
@@ -176,7 +205,9 @@ const EbookDetails = ({
                     className={`${styles.button} !w-[180px] my-3 font-Poppins cursor-pointer !bg-[crimson]`}
                     onClick={handleOrder}
                   >
-                    Buy Now {ebookInfo?.price}฿
+                    {
+                      ebookInfo.price === 0 ? `Free` : `Buy Now ${ebookInfo.price}฿`
+                    }
                   </div>
                 )}
               </div>
@@ -239,18 +270,3 @@ const EbookDetails = ({
 };
 
 export default EbookDetails;
-
-
-// 184.22.159.119/32 		
-//  Active
-//  EDIT  DELETE
-// 0.0.0.0/1 		
-//  Active
-//  EDIT  DELETE
-// 223.24.166.80/32  (includes your current IP address)		
-//  Active
-//  EDIT  DELETE
-// 223.24.162.24/32 		
-//  Active
-//  EDIT  DELETE
-// 184.22.158.104/32 
